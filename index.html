@@ -1,54 +1,133 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Transforming Nations</title>
 
+  <!-- Шрифт -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
   <style>
+    * { box-sizing: border-box; }
+
     body{
-      margin:0;
-      font-family:Inter, sans-serif;
-      min-height:100vh;
-      background:#000;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      color:#fff;
+      margin: 0;
+      font-family: Inter, sans-serif;
+      min-height: 100vh;
+      color: #ffffff;
+
+      /* ФОН */
+      background: 
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+        url("Дизайн без назви (1).jpg") center / cover no-repeat fixed;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
     }
-    .box{
-      width:100%;
-      max-width:420px;
-      padding:20px;
-      text-align:center;
+
+    .wrapper{
+      width: 100%;
+      max-width: 420px;
+      text-align: center;
     }
-    h1{margin-bottom:8px;}
-    p{opacity:.8;margin-bottom:20px;}
-    a{
-      display:block;
-      padding:14px;
-      margin-bottom:12px;
-      background:#bfe6ff;
-      color:#000;
-      text-decoration:none;
-      border-radius:10px;
-      font-weight:600;
+
+    h1{
+      margin: 0 0 8px 0;
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .subtitle{
+      font-size: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.85;
+      margin-bottom: 20px;
+    }
+
+    .links{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* КНОПКИ */
+    .btn{
+      padding: 15px 18px;
+      border-radius: 14px;
+      background: rgba(200, 235, 255, 0.92);
+      color: #0b1220;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 
+        background 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    }
+
+    /* НАВЕДЕННЯ */
+    .btn:hover{
+      background: rgba(170, 220, 255, 0.95);
+      transform: translateY(-2px);
+    }
+
+    /* НАТИСКАННЯ */
+    .btn:active{
+      background: rgba(120, 190, 235, 1);
+      transform: scale(0.97);
+    }
+
+    footer{
+      margin-top: 18px;
+      font-size: 12px;
+      opacity: 0.7;
     }
   </style>
 </head>
-<body>
-  <div class="box">
-    <h1>Transforming Nations</h1>
-    <p>Renewing Lives — Fulfilling God’s Will</p>
 
-    <a href="#">🤍 Donate</a>
-    <a href="#">🌍 Website</a>
-    <a href="#">📷 Instagram</a>
-    <a href="#">✈️ Join us</a>
-  </div>
+<body>
+  <main class="wrapper">
+    <h1>Transforming Nations</h1>
+    <div class="subtitle">Renewing Lives — Fulfilling God’s Will</div>
+
+    <!-- ====== ЛІНКИ (ТУТ МІНЯЄШ ТІЛЬКИ URL) ====== -->
+    <div class="links">
+
+      <!-- DONATE -->
+      <a class="btn" href="PUT_DONATE_LINK_HERE" target="_blank">
+        🤍 Donate
+      </a>
+
+      <!-- WEBSITE -->
+      <a class="btn" href="PUT_WEBSITE_LINK_HERE" target="_blank">
+        🌍 Our website
+      </a>
+
+      <!-- INSTAGRAM -->
+      <a class="btn" href="PUT_INSTAGRAM_LINK_HERE" target="_blank">
+        📷 Instagram
+      </a>
+
+      <!-- TELEGRAM -->
+      <a class="btn" href="PUT_TELEGRAM_LINK_HERE" target="_blank">
+        ✈️ Telegram
+      </a>
+
+      <!-- JOIN US -->
+      <a class="btn" href="PUT_JOIN_US_LINK_HERE" target="_blank">
+        🤝 Join us
+      </a>
+
+    </div>
+    <!-- ====== КІНЕЦЬ ЛІНКІВ ====== -->
+
+    <footer>© Transforming Nations</footer>
+  </main>
 </body>
 </html>

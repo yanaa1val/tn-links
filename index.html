@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Transforming Nations</title>
 
-  <!-- Шрифт -->
+  <!-- Google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -19,15 +19,23 @@
       min-height: 100vh;
       color: #ffffff;
 
-      /* ФОН */
-      background: 
-        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
-        url("Дизайн без назви (1).jpg") center / cover no-repeat fixed;
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.75)),
+        url("bg-desktop.jpg") center / cover no-repeat fixed;
 
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 24px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px){
+      body{
+        background:
+          linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.75)),
+          url("bg-mobile.jpg") center 20% / cover no-repeat;
+      }
     }
 
     .wrapper{
@@ -47,7 +55,7 @@
       letter-spacing: 1px;
       text-transform: uppercase;
       opacity: 0.85;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .links{
@@ -56,28 +64,26 @@
       gap: 12px;
     }
 
-    /* КНОПКИ */
+    /* BUTTONS */
     .btn{
-      padding: 15px 18px;
+      padding: 16px 18px;
       border-radius: 14px;
       background: rgba(200, 235, 255, 0.92);
       color: #0b1220;
       font-weight: 700;
       text-decoration: none;
-      transition: 
+      transition:
         background 0.2s ease,
         transform 0.15s ease,
         box-shadow 0.15s ease;
       box-shadow: 0 8px 25px rgba(0,0,0,0.35);
     }
 
-    /* НАВЕДЕННЯ */
     .btn:hover{
       background: rgba(170, 220, 255, 0.95);
       transform: translateY(-2px);
     }
 
-    /* НАТИСКАННЯ */
     .btn:active{
       background: rgba(120, 190, 235, 1);
       transform: scale(0.97);
@@ -96,30 +102,25 @@
     <h1>Transforming Nations</h1>
     <div class="subtitle">Renewing Lives — Fulfilling God’s Will</div>
 
-    <!-- ====== ЛІНКИ (ТУТ МІНЯЄШ ТІЛЬКИ URL) ====== -->
+    <!-- ====== ЛІНКИ — МІНЯЄШ ТІЛЬКИ href ====== -->
     <div class="links">
 
-      <!-- DONATE -->
       <a class="btn" href="PUT_DONATE_LINK_HERE" target="_blank">
         🤍 Donate
       </a>
 
-      <!-- WEBSITE -->
       <a class="btn" href="PUT_WEBSITE_LINK_HERE" target="_blank">
         🌍 Our website
       </a>
 
-      <!-- INSTAGRAM -->
       <a class="btn" href="PUT_INSTAGRAM_LINK_HERE" target="_blank">
         📷 Instagram
       </a>
 
-      <!-- TELEGRAM -->
       <a class="btn" href="PUT_TELEGRAM_LINK_HERE" target="_blank">
         ✈️ Telegram
       </a>
 
-      <!-- JOIN US -->
       <a class="btn" href="PUT_JOIN_US_LINK_HERE" target="_blank">
         🤝 Join us
       </a>
